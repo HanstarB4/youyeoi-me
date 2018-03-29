@@ -1,0 +1,317 @@
+@charset "utf-8";
+
+#wrap{width: 100%;}
+header, main, footer{position: relative;width: 100%;}
+
+/* //////// 헤더 CSS 영역 //////// */
+#headerIn{
+    width: 100%; height: 80px; 
+    position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+.navi, .search{position: relative;;width: 45px; height: 45px;}
+.navi{left: 10px;}
+.search{right: 10px;}
+.navi>a, search>a{
+    display: block;
+    width: 30px; height: 30px;
+}
+.navi span, .search span{
+    display: block;
+    width: 30px; height: 30px;
+    margin: 0 auto;
+}
+.fa-bars, .fa-search{font-size: 30px;}
+.logo{
+    position: relative;
+    bottom: 20px;
+    width: 120px; height: 60px;
+}
+.logo>a{
+    display: block;
+    width: 120px; height: 60px;
+}
+
+#gnb{
+    position: fixed;
+    left: -100%;
+    width: 100%; height: 100%;
+    display: none;
+    background: white;
+    z-index: 999;
+}
+/* 만약 중앙정렬 하고싶으면 각 메뉴 a태그의 text-indent
+   지우고 text-align: center 넣으면됩니다. */
+#gnb>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    text-indent: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+#gnb>ul>li:nth-child(1)>a:after, 
+#gnb>ul>li:nth-child(2)>a:after{
+    content:"▼";
+    display: block;
+    width: 20px; height: 20px;
+    position: absolute;
+    right: 30px; top: 50%;
+    transform: translateY(-50%);
+}
+.depth2{display: none; background: #ccc;}
+.depth2 a{
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    text-indent: 20px;
+}
+#searchBar{
+    position: relative;
+    width: 100%; height: 50px;
+    display: none;
+    background: #fff;
+}
+#sch{
+    position: relative;
+    top: 5px;
+    display: block;
+    width: 80%; height: 40px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-indent: 20px;
+    background: rgba(255,255,255,0.5);
+}
+
+/* //////// 메인 CSS 영역 //////// */
+#mainVisual{width: 100%; height: 300px;}
+#mainVisual>a{
+    display: block;
+    width: 100%; height: 100%;
+    background: url("../images/mainV.jpg") no-repeat center / cover;
+}
+#mainVisual>p{
+    position: absolute;
+    top: 10px;
+    text-indent: 10px;
+    font-size: 14px;
+    font-family: "arial", sans-serif;
+    color: white;
+}
+.ko, .ko2{
+    display: block;
+    text-indent: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.ko{position: relative; top: 8px;}
+.ko2{position: relative; bottom: 10px;}
+#mbtn{
+    position: relative;
+    bottom: 210px; left: 10px;
+    width: 90px; height: 24px;
+    text-align: center;
+    line-height: 24px;
+}
+#mbtn>a{
+    display: block;
+    width: 90px; height: 24px;
+    font-family: "나눔 고딕", sans-serif;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+}
+
+/* //////////////////////// */
+.gall1{
+    width: 100%; height: auto;
+    /* margin-top: 20px; */
+}
+.gall1 li{
+    width: 100%; height: auto;
+    margin: 0 auto;
+}
+.gall1 a{
+    display: block;
+    width: 100%; height: auto;
+}
+.gall1 img{width: 100%; height: auto;}
+.pt0{
+    position: absolute;
+    top: 318px; left: 14px;
+    font-family: "arial", sans-serif;
+    font-size: 14px;
+    color: white;
+}
+.pt1{
+    position: relative;
+    top: 10px;
+    font-family: "나눔 스퀘어", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+/* ////// Select CSS 영역 ////// */
+/* -ms-expand display: none , appearance: none; */
+#show2, #show3, #show4, #show5{
+    position: relative;
+    display: none;
+}
+#choice>p{
+    display: flex;
+    font-family: "arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-indent: 6px;
+    /* letter-spacing: -1px; */
+    padding: 14px 0 6px 0;
+}
+#choice>p::after{
+    content:"+";
+    display: block;
+    margin-left: 206px;
+}
+#choice, .showpic{
+    width: 100%; height: auto;
+    margin: 0 auto 0 auto;
+}
+select{
+    display: block;
+    width: 100%; height: 30px;
+    border: 1px solid #ccc;
+}
+.showpic img{
+    display: block;
+    width: 100%; height: auto;
+}
+
+/* ////// SumImg CSS 영역 ////// */
+#sumImg{
+    width:100%; height:auto;
+    margin: 0 auto 0 auto;
+}
+#sumImg>p{
+    display: flex;
+    font-family: "arial", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-indent: 6px;
+    /* letter-spacing: -1px; */
+    padding: 14px 0 6px 0;
+}
+#sumImg>p::after{
+    content:"+";
+    display: block;
+    margin-left: 190px;
+}
+.sum1, .sum2, .sum3{
+    width:100%; height:auto;
+    display:flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+#sumImg img{
+    display:block;
+    width:100%;
+    height:auto;
+}
+/* #sumImg p{width:100%; height:auto;} */
+.exp_1, .exp_2, .exp_3{
+    width: 100px;
+    font-family: "나눔 고딕",sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    /* border: 1px solid red; */
+}
+.exp_1{
+    position: absolute;
+    right: 10px; bottom: 346px;
+}
+.exp_2{
+    position: absolute;
+    right: 10px; bottom: 178px;
+}
+.exp_3{
+    position: absolute;
+    right: 10px; bottom: 10px;
+}
+.title{
+    position: relative;
+    right: 100px; top: 50px;
+    display:block;
+    font-size:14px;
+    font-weight: 600;
+}
+.sum1_exp1, .sum1_exp2, .sum1_exp3{
+    display:block;
+    font-size:14px;
+    padding-top:10px;
+    text-indent: 10px;
+}
+
+/* ////// Footer CSS 영역 ////// */
+footer{
+    width: 100%; height: auto;
+    background: black;
+}
+#fnav>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    color: white;
+    padding: 5px 0;
+    text-indent: 10px;
+    font-weight: 600;
+    font-style: normal;
+}
+#fnav>ul>li>a::after{
+    content: "▼";
+    display: block;
+    position: absolute;
+    width: 30px; height: 30px;
+    right: 10px; top: 60%;
+    transform: translateY(-50%);
+    font-size: 14px;
+}
+.fdepth2{display: none;}
+.fdepth2 li{
+    background: rgba(26, 26, 26);
+    padding: 10px 0;
+}
+.fdepth2 address, .knum, .cpy{
+    display: block;
+    width: 200px;
+    font-style: normal;
+    font-size: 14px;
+    color: white;
+    padding: 5px 0;
+    margin-left: 20px;
+}
+.flogo{
+    width: 100%; height: 50px;
+    background: black;
+}
+.flogo>a{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 80px; height: 40px;
+    margin: 0 auto;
+    background: url("../images/logo_1.png")no-repeat center / 100px 60px;
+}
+
+.conts{
+    display: none;
+}

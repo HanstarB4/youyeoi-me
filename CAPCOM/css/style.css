@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+#wrapper{width: 100%;}
+
+header{
+    width: 100%;
+    height: 122px;
+    background: url("../images/bg_header.png") no-repeat center / cover;
+}
+
+#headerIn{
+    width: 910px; height: 82px;
+    margin: 0 auto;
+}
+#left{
+    width: 10%; height: 82px;
+}
+#right{
+    width: 90%; height: 82px;
+}
+
+/* ///로고 CSS( .logo )/// */
+.logo{
+    position: relative; top: 25px;
+    width: 177px; height: 32px;
+}
+.logo>a{
+    display: block;
+    width: 100%; height: 100%;
+}
+
+/* ///탑메뉴 CSS( #utill )/// */
+#utill>ul{
+    position: relative;
+    bottom: 76px;
+    left: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+#utill a{
+    display: block;
+    height: 12px;
+    
+    font-family: "Arial" sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+}
+
+/* ///내비게이션 CSS ( gnb )/// */
+#gnb>ul{
+    display: flex;
+}
+#gnb a{
+    display: block;
+    width: 120px;
+    padding: 15px 0;
+
+    font-family: "나눔고딕" sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+}
+#gnb>ul>li:nth-child(3)>a{
+    width: 150px;
+}
+#gnb>ul>li:nth-child(4)>a{
+    width: 150px;
+}
+#gnb>ul>li:nth-child(5)>a{
+    width: 150px;
+}
+#gnb{
+    position: relative;
+    bottom: 82px;
+    width: 600px;
+    margin-left: auto;
+}
+
+/* ///main영역 css/// */
+
+/* slider */
+#mainSlider{
+    width: 910px;
+    margin: 0 auto;
+}
+
+/* information box */
+#informationbox{
+    width: 910px; height: auto;
+    margin: 0 auto;
+    position: relative;
+    bottom: 50px;
+}
+.ibox{
+    width: 300px; height: 100px;
+    background: #ccc;
+    border-radius: 5px;
+}
+.ibox img{
+    position: relative;
+    top: 32px;
+    left: 6px;
+}
+.Tit{
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    left: 120px;
+    bottom: 20px;
+}
+.information{
+    color: #333;
+    position: relative;
+    left: 120px;
+    bottom: 20px;
+}
+#informationbox>ul{
+    display: flex;
+    justify-content: space-between;
+}
+.ibox02 img{
+    position: relative;
+    top: 28px;
+}
+.Tit2{
+    position: relative;
+    bottom: 28px;
+}
+.information2{
+    position: relative;
+    bottom: 28px;
+}
+/* 영상 */
+.channel{
+    position: relative;
+    top: 20px;
+}
+iframe{
+    position: relative;
+    top: 40px;
+}
+/* 각종정보box */
+#informationbox02{
+    position: relative;
+    top: 70px;
+    width: 100%;
+    
+}
+#leftibox>ul{
+    display: flex;
+    justify-content: space-around;
+}
+.leftibox a{
+    display: block;
+    font-family: "나눔고딕", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+#leftibox{
+    width: 600px; height: 30px;
+    /* margin: 0 auto; */
+    border-bottom: 3px solid #006699;
+}
+/* #leftibox>ul>li:first-child>a:before{
+    content: "";
+    display: block;
+    width: 200px; height: 3px;
+    background: #006699;
+    position: absolute;
+    left: 0; bottom: 0;
+} */
+#textinfo{
+    width: 600px; height: 418px;
+    /* border: 1px solid red; */
+}
+.iibox{
+    position: relative;
+    top: 40px;
+    width: 320px;
+}
+.iibox>a>p{
+    font-weight:500;
+    line-height: 21px;
+}
+.iibox>img{
+    position: absolute;
+    top: 2px; left: 90px;
+}
+.Tit01 .Tit02{
+    font-size: 16px;
+}
+.Tit02{
+    color: #006699;
+    line-height: 24px;
+}
+.iibox02{
+    position: relative;
+    top: 60px;
+}
+.iibox03{
+    position: relative;
+    top: 80px;
+}
+.iibox04{
+    position: relative;
+    top: 100px;
+}
+
+/* CAPCOM SNS */
+#rightibox{
+    width: 270px; height: 338px;
+    background: #ccc;
+    border: 1px solid #999;
+    position: absolute;
+    top: 30px; right: 0;
+}
+#rightibox>p{
+    position: relative;
+    bottom: 30px;
+    font-size: 16px;
+    font-family: "나눔고딕", sans-serif;
+}
+#rightiboxIn img{
+    position: relative;
+    bottom:10px;
+}
+#rightiboxIn>ul{
+    display: flex;
+    justify-content: space-around;
+}
+#rightiboxIn>a{
+    display: block;
+}
+#rightiboxIn p{
+    font-size: 12px;
+    color: #006699;
+    padding-left: 56px;
+}
+.fire{
+    position: relative;
+    left: 14px;
+    top: 46px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+}
+.fireInfo{
+    position: relative;
+    left: 14px; top: 54px;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: -1px;
+    line-height: 21px;
+}
+#rightibox_bottom{
+    position: relative;
+    left: 638px; bottom: 52px;
+    width: 270px; height: 50px;
+    background: #ccc;
+    border: 1px solid #999;
+}
+#rightibox_bottom a{
+    display: block;
+    position: relative;
+    top: 15px;
+}
+#rightibox_bottom>ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#rightibox_bottom p{
+    font-weight: 600;
+}
+/* 오늘의 할인 css  */
+#gamebox{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    text-align: center;
+    position: relative;
+    top: 70px;
+    width: 910px; height: 354px;
+    background: #ccc;
+    border: 1px solid #999;
+}
+#gamebox>p{
+    position: absolute;
+    top: -30px; left: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+#gamebox>div>p>a{
+    display: block;
+    padding-top: 12px;
+    font-family: "나눔고딕", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+}
+#gamebox>div>p>a>span{
+    color: #006699;
+}
+/* 고객센터 css */
+#customer{
+    position: relative;
+    top: 80px; right: 17px;
+}
+
+/* footer */
+#footerIn{
+    width: 910px; height: 120px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 80px;
+}
+.finfo{
+    position: relative;
+    top: 14px;
+    left: 55px;
+}
+.finfo>ul{
+    display: flex;
+}
+.finfo li{
+    padding: 0 10px;
+    border-left: 1px solid #000;
+    height: 14px;
+    line-height: 12px;
+    font-size: 14px;
+    font-family: "나눔고딕", sans-serif;
+}
+.finfo>ul>li:first-child{
+    border: 0;
+}
+address{
+    position: relative;
+    top: 40px;
+    font-style: normal;
+    font-size: 12px;
+    color: #333;
+}
+#footerIn>span{
+    position: relative;
+    top: 40px;
+    font-size: 12px;
+}

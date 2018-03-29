@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <script src="js/jquery.bxslider.js"></script>
+    <title>TOYOTA</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div id="headerIn">
+                <!-- 오픈메뉴 버튼 -->
+                <div class="navi">
+                    <a href="#"><span class="fas fa-bars"></span></a>
+                </div>
+                <h1 class="logo"><a href="./index.html"><img src="./images/logo_1.png" alt=""></a></h1>
+
+                <div class="search">
+                    <a href="#"><span class="fas fa-search"></span></a>
+                </div>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li><a href="#">도요타</a>
+                        <ul class="depth2">
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">SERVICE</a></li>
+                            <li><a href="#">INSIDE</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">MODELS</a>
+                        <ul class="depth2">
+                            <li><a href="#">AVALON</a></li>
+                            <li><a href="#">CAMRY HYBRID</a></li>
+                            <li><a href="#">PRIUS PRIME</a></li>
+                            <li><a href="#">RAV4</a></li>
+                            <li><a href="#">더보기 +</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">SMART HYBRID</a></li>
+
+                    <li><a href="#">DEALERS</a></li>
+
+                    <li><a href="#">INSIDE</a></li>
+
+                    <li><a href="#">SMART CEO</a></li>
+
+                    <li><a href="#">시승신청</a></li>
+                </ul>
+            </nav>
+            <div id="searchBar">
+                <input type="search" name="search" id="sch" placeholder="검색란...">
+            </div>
+        </header>
+
+        <main>
+            <div id="mainVisual">
+                <a href="#"></a>
+                <p>
+                    TOYOTA HYBRID 20TH ANNIVERSARY<br>
+                    <span class="ko">도요타 하이브리드 20주년, 여러분과</span> <br>
+                    <sapn class="ko2">함께한 다양한 순간들을 만나보세요.</span>       
+                </p>
+                <div id="mbtn">
+                    <a href="#">자세히 보기 ></a>
+                </div>
+            </div>
+
+            <div class="gall1">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="./images/m11.jpg" alt=""></a>
+                            <p class="pt0">MONTHLY PROMOTION<br>
+                                <sapn class="pt1">3월</sapn><br>
+                                <span class="pt1">토요타 스마트 프로모션</span>
+                            </p>
+                    </li>
+                    <div id="mainSlider">
+                        <ul class="slider">
+                            <li><a href="#"><img src="./images/m2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="./images/m3.jpg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <li>
+                        <a href="#">
+                            <img src="./images/m4.jpg" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="choice">
+                <p>TOYATA STORY</p>
+                <select class="selbox" onchange="setSelectText('searchSubCate',this)">
+                    <option value="show1">2018 드림카 아트 컨테스트 수상자</option>
+                    <option value="show2">'프리우스C' 사전 계약 실시</option>
+                    <option value="show3">2017년 전동화 자동차 152만대 판매</option>
+                    <option value="show4">PRIUS TRD 에디션 출시</option>
+                    <option value="show5">2017 TOYOTA CLASSICS</option>
+                </select>
+                <div class="showpic">
+
+                    <div id="show1" class="mm">
+                        <a href="#"><img src="./images/s1.jpg" alt=""></a>
+                    </div>
+                    <div id="show2" class="mm">
+                        <a href="#"><img src="./images/s2.jpg" alt=""></a>
+                    </div>
+                    <div id="show3" class="mm">
+                        <a href="#"><img src="./images/s3.jpg" alt=""></a>
+                    </div>
+                    <div id="show4" class="mm">
+                        <a href="#"><img src="./images/s4.jpg" alt=""></a>
+                    </div>
+                    <div id="show5" class="mm">
+                        <a href="#"><img src="./images/s5.jpg" alt=""></a>
+                    </div>
+                    
+                </div>
+            </div><!-- #choice -->
+
+            <div id="sumImg">
+                <p>TOYOTA MODELS</p>
+                <div class="sum1">
+                    <img src="./images/c1.jpg" alt="">
+                    <a href="#"><p class="exp_1">
+                        자세히 보기>
+                    </p></a>
+                </div>
+
+                <div class="sum2">
+                    <img src="./images/c2.jpg" alt="">
+                    <a href="#"><p class="exp_2">
+                        자세히 보기>
+                    </p></a>
+                </div>
+
+                <div class="sum3">
+                    <img src="./images/c3.jpg" alt="">
+                    <a href="#"><p class="exp_3">
+                        자세히 보기>
+                    </p></a>
+                </div>
+
+            </div><!-- #sumImg -->
+        </main>
+
+        <footer>
+            <address>
+                <nav id="fnav">
+                    <ul>
+                        <li><a href="#">ADDRESS</a>
+                            <ul class="fdepth2">
+                                <li>
+                                    <address>
+                                        울산광역시<br>
+                                        남구 삼산동 삼산타워 22층<br>
+                                        천상천하디자인<br>
+                                    </address>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="#">저작권</a>
+                            <ul class="fdepth2">
+                                <li>
+                                    <span class="knum">
+                                        사업자등록번호 : 001-01-00001
+                                    </span>
+                                    <span class="cpy">
+                                        © Copyright 2017 HeavenDesign CO., LTD. ALL RIGHTS RESERVED.
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="flogo">
+                    <a href="#"></a>
+                </div>
+            </address>
+        </footer>
+    </div><!-- #wrap -->
+</body>
+    <script>
+        // Search Bar //
+        $(".search>a").click(function(){
+            $("#searchBar").slideToggle(500);
+            return false;
+        });
+        
+        // Open Menu //
+        $('.navi>a').click(function(){
+            var poi = $('#gnb').css('display');
+            if(poi == "none"){
+                $('#gnb').show(100).animate({left:'0'});
+            }else if(poi == "block"){
+                $('#gnb').animate({left:'-100%'});
+                $('#gnb').fadeOut(200);
+                $('.depth2').slideUp();
+            }
+            return false;
+        });
+
+        // Accordion Menu 쎈세버전 //
+        $('#gnb>ul>li>a').click(function(){
+            var dis = $(this).siblings('.depth2');
+            var two = dis.css('display');
+
+            if(two == 'none'){
+                $('.depth2').slideUp();
+                dis.slideDown(); // dis => display: block;
+            }else if(two == 'block'){
+            dis.slideUp();
+            }
+            return false;
+            });
+
+        // BxSlider
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+              auto: true,
+          });
+        });
+
+        // select //
+        $('.selbox').change(function(){
+            $('.mm').hide(); // 현재 선택한 옵션 메뉴를 제외하고는 다른 나머지 메뉴는 사라진다.
+            $('#'+$(this).val()).show();
+            // └>선택한 옵션메뉴에 관련되는 value의 값과 일치하는 아이디 명을 가지고 있는
+            //   메뉴만 나타내도록 해주는 구성
+        });
+
+        // Footer Accordion Menu 쎈세버전 //
+        $('#fnav>ul>li>a').click(function(){
+            var dis = $(this).siblings('.fdepth2');
+            var two = dis.css('display');
+
+            if(two == 'none'){
+                $('.fdepth2').slideUp();
+                dis.slideDown(); // dis => display: block;
+            }else if(two == 'block'){
+            dis.slideUp();
+            }
+            return false;
+        });
+
+        $(".gall1 a").click(function(){
+            $(this).find(".conts").slideToggle();
+            return false;
+        });
+
+    </script>
+</html>

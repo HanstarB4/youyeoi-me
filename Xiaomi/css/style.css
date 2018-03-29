@@ -1,0 +1,878 @@
+#wrap{width: 100%;}
+header, main, footer{position: relative;width: 100%;}
+
+/* //////// 헤더 CSS 영역 //////// */
+#headerIn{
+    width: 100%; height: 66px; 
+    max-width: 767px;
+    position: relative; 
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin: 0 auto;
+}
+.navi{position: relative;;width: 34px; height: 34px;}
+.navi{left: 10px;}
+.navi>a{
+    display: block;
+    width: 30px; height: 30px;
+}
+.navi span{
+    display: block;
+    width: 34px; height: 34px;
+}
+.fa-bars{font-size: 34px;}
+.logo{
+    width: 40px; height: 40px; margin: 0 auto;
+    padding-right: 38px;
+}
+.logo>a{
+    display: block;
+    width: 40px; height: 40px; 
+}
+.logo img{width: 40px; height: 40px;}
+#utill{display: none;}
+#gnb{
+    position: absolute;
+    top: 67px; left: 0;
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    background: white;
+    z-index: 99;
+    display: none;
+}
+#gnb>ul>li{
+    border-bottom: 1px solid #ccc;
+}
+#gnb>ul>li>a{
+    position: relative;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-indent: 10px;
+    padding: 10px 0;
+}
+#gnb>ul>li>a::after{
+    content:"▼";
+    display: block;
+    width: 20px; height: 20px;
+    position: absolute;
+    right: 20px; top: 50%;
+    transform: translateY(-50%);
+}
+#gnb>ul>li>a.on:after{
+    color: #000;
+    content: "▲";
+}
+#gnb>ul>li:last-child>a:after{
+    content: "";
+}
+.depth2{
+    width: 100%;
+    background: #ccc;
+    display: none;
+}
+.depth2 a{
+    position: relative;
+    display: block;
+    font-size: 14px;
+    text-indent: 20px;
+    padding: 4px 0 10px 0;
+}
+#utill2{
+    width: 100%; height: 50px;
+    max-width: 767px;
+    background: rgba(204, 204, 204, 0.3);
+    margin: 0 auto;
+}
+#utill2>p{
+    position: relative;
+    top: 16px;
+    padding-left: 10px;
+    font-family: "arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+#utill2>ul{
+    position: relative;
+    bottom: 3px;
+    display: flex;
+    justify-content: flex-end;
+}
+#utill2>ul>li>a{
+    display: block;
+    padding-right: 10px;
+    font-family: 'arial', sans-serif;
+    font-size: 14px;
+}
+#utill2>ul>li:first-child>a{
+    color: gray;
+}
+
+/* //////// 메인 CSS 영역 //////// */
+#mainVisual{
+    width: 100%;  height: 3222px;
+    max-width: 767px;
+    margin: 0 auto;
+}
+#mainVisual>.mbg{
+    position: absolute;
+    width: 100%; height: 100%;
+    max-width: 767px;
+    max-height: 1851px;
+    z-index: -99;
+}
+#mainVisual>p{
+    padding-top: 20px;
+    color: white;
+    font-family: "arial", sans-serif;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+.mt{
+    display: block;
+    font-size: 32px;
+    line-height: 30px;
+}
+.mt2{
+    font-weight: 0;
+    position: relative;
+    bottom: 30px;
+    display: block;
+    line-height: 20px;
+    font-size: 18px;
+}
+.mt3{display: none;}
+#ex{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: 34px;
+}
+.handimg{
+    width: 300px; height: 440px;
+}
+
+/* /////////////////////// */
+#black_bg{
+    width: 100%; height: 768px;
+    max-width: 767px;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+#black_bg>ul:first-child{
+    position: relative;
+    top: 50px;
+}
+#black_bg>ul:nth-child(2){
+    position: relative;
+    top: 150px;
+}
+#black_bg>ul:last-child{
+    position: relative;
+    top: 260px;
+}
+#black_bg>ul>li>a{
+    display: block;
+    font-family: "arial", sans-serif;
+    color: white;
+}
+#black_bg>ul>li:first-child>a{
+    font-size: 30px;
+}
+#black_bg>ul>li:nth-child(2)>a{
+    line-height: 30px;
+    font-size: 18px;
+}
+#black_bg>ul>li:last-child>a{
+    line-height: 30px;
+    font-size: 16px;
+}
+#black_bg>ul:first-child>img{
+    width: 219px; height: 50px;
+    position: relative;
+    top: 16px; left: 10px;
+}
+#black_bg>ul:nth-child(2)>img{
+    width: 209px; height: 70px;
+    position: relative;
+    top: 12px; left: 10px;
+}
+#black_bg>ul:nth-child(3)>img{
+    width: 217px; height: 47px;
+    position: relative;
+    top: 12px; left: 10px;
+}
+
+/* ////////////////////// */
+#fsd{
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+#fsd>p{
+    font-family: "arial", sans-serif;
+    font-size: 36px;
+    color: white;
+}
+.mlook{
+    position: relative;
+    color: #ccc;
+    top: 14px;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+}
+.tlook{display: none;}
+#fsd>img{
+    position: relative;
+    top: 50px;
+    width: 316px; height: 159px;
+}
+
+/* /////////// */
+#main2{
+    position: relative;
+    top: 88px;
+    width: 100%; height: 318px;
+    max-width: 767px;
+}
+#main2>img{
+    position: absolute;
+    width: 100%; height: 318px;
+    max-width: 767px;
+    z-index: -99;
+}
+.tl1, .tl2, .tl3{display: none;}
+#main2>.ml1{
+    position: relative;
+    top: 70px;
+    color: white;
+    font-family: "arial", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+#main2>p>.ml2{
+    color: #ccc;
+    margin-top: 30px;
+    display: block;
+    font-size: 18px;
+}
+/* ////////////// */
+#main3{
+    position: relative;
+    top: 80px;
+    width: 100%; height: 490px;
+    max-width: 767px;
+}
+#main3>.img1{
+    position: absolute;
+    width: 100%; height: 490px;
+    max-width: 767px;
+    z-index:-99;
+}
+#main3>.p0{
+    position: relative;
+    top: 20px;
+    color: white;
+    font-family: "arial", sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+#main3>.p0>.ps1{
+    margin-top: 10px;
+    display: block;
+    font-size: 16px;
+    color: #ccc;
+}
+#main3>.p0>.ps2{display: none;}
+#timg{display: none;}
+#imgg{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.img2{
+    position: relative; 
+    top: 50px;
+    width: 285px; height: 245px;
+}
+#pp{
+    width: 100%;
+    max-width: 767px;
+}
+#pp>.p1{
+    text-align: center;
+    position: relative;
+    top: 66px; right: 36px;
+    font-family: "arial", sans-serif;
+    color: lightgray;
+    text-align: center;
+    font-size: 12px;
+}
+#pp>.p1>span{position: relative; left: 92px;}
+
+#main4{
+    position: relative;
+    top: 80px; 
+    width: 100%; height: 490px;
+    max-width: 767px;
+}
+#main4>img{
+    position: absolute;
+    width: 100%; height: 360px;
+    max-width: 767px;
+    z-index:-99;
+}
+#main4>p{
+    position: relative;
+    bottom: 40px;
+    color: white;
+    font-family: "arial", sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+#main4>p>.m4_1{
+    margin-top: 10px;
+    display: block;
+    font-size: 18px;
+}
+#main4>.mff0>.m4_2{display: none;}
+#ft>ul{
+    position: relative;
+    top: 200px;
+    display: flex;
+    justify-content: center;
+}
+#ft>ul>li{
+    padding: 0 20px;
+    font-family: "arial", sans-serif;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+/* ///////////////// */
+#main5{
+    position: relative;
+    bottom: 50px;
+    width: 100%; height: 280px;
+    max-width: 767px;
+    background: black;
+    text-align: center;
+    z-index: 999;
+}
+#main5>.m5_p{width: 296px; height: 226px;}
+#main5>p{
+    position: relative;
+    top: 20px;
+    color: white;
+    font-family: "arial", sans-serif;
+    font-size: 20px;
+}
+#m5_f{
+    position: relative;
+    top: 20px;
+    width: 100%; height: 670px;
+    max-width: 767px;
+    background: black;
+    display: none;
+}
+#m5_f>.m5t1{
+    position: relative;
+    top: 25px;
+}
+.m5t2{display: none;}
+.list_btn{
+    position: relative;
+    width: 30px;
+    bottom: 88px; left: 70px;
+    z-index: 999;
+    margin: 0 auto;
+}
+.btn1{
+    display: block;
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    background: #999;
+    margin: 0 auto;
+    z-index: 999;
+    font-size: 30px;
+    text-align: center;
+    line-height: 24px;
+    color: white;
+}
+#fmi{
+    position: relative;
+    bottom: 80px;
+    background: rgba(204, 204, 204, 0.3);
+    width: 100%; height: 50px;
+    max-width: 767px;
+}
+#fmi>.fmi_1{
+    display: flex;
+    justify-content: space-around;
+}
+#fmi>.fmi_1>li{
+    line-height: 48px;
+    height: 46px;;
+}
+#fmi>.fmi_1>li:first-child{
+    height: 30px;
+    position: relative;
+    bottom: 4px;
+    font-family: "arial", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+#fmi>.fmi_1>li>span{
+    height: 20px;
+    display: block;
+    position: relative;
+    bottom: 36px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #666;
+}
+
+/* footer css */
+footer{
+    height: 114px;
+    max-width: 767px;
+}
+#footerIn{
+    position: relative;
+    width: 100%; height: 114px;
+    max-width: 767px;
+    background: black;
+    margin: 0 auto;
+}
+#footerIn>h1>a{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#footerIn img{
+    width: 47px; height: 31px;
+    margin-top: 30px;
+}
+address{
+    position: relative;
+    bottom: 26px;
+}
+address>p{
+    width: 100%;
+    max-width: 767px;
+    margin: 0 auto;
+    font-family: "arial", sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+address>p>span{
+    color: rgb(255,105,0);
+}
+
+/* //////////////// */
+/* //// Tablet //// */
+@media all and (min-width:768px){
+    #headerIn{height: 88px; max-width: 1199px;}
+    .fa-bars{font-size: 40px;}
+    .logo{
+        width: 78px; height: 76px;
+        padding: 30px 10px 0 0;
+    }
+    .logo>a{
+        display: block;
+        width: 78px; height: 76px;
+    }
+    .logo img{width: 50px; height: 50px;}
+    #gnb{top: 90px; max-width: 1199px;}
+    #utill2{height: 60px;max-width: 1199px;}
+    #utill2>p{position: relative; top: 24px;}
+    #utill2>ul{position: relative; top: 6px;}
+
+    /* 메인 CSS 영역 */
+    #mainVisual{height: 4000px;max-width: 1199px;}
+    #mainVisual>.mbg{max-width: 1199px;}
+    #mainVisual>p{font-size: 50px;}
+    .mt{font-size: 46px;}
+    #ex{margin-left: 60px;}
+    .handimg{width: 640px; height: 871px;}
+    #black_bg{
+        height: 302px;
+        max-width: 1199px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #black_bg>ul:first-child{top: 0;}
+    #black_bg>ul:nth-child(2){top: 0;}
+    #black_bg>ul:last-child{top: 0;}
+    #fsd{top: 10px;}
+    #fsd>p{font-size: 40px;}
+    #fsd>p>span{font-size: 18px;}
+    #fsd>p>.tlook{
+        display: block;
+        line-height: 28px;
+        margin-top: 14px;
+        color: #ccc;
+    }
+    #fsd>img{width: 558px; height: 283px;}
+    #main2{top: 18px; max-width: 1199px;}
+    #main2>img{height: 760px;max-width: 1199px;}
+    .ml1, .ml2{display: none;}
+    .tl1, .tl2, .tl3{display: block}
+    .tl1{
+        position: relative;
+        top: 150px;
+        text-align: center;
+        font-family: "arial", sans-serif;
+        font-size: 44px;
+        color: white
+    }
+    .tl2{
+        position: relative;
+        top: 260px;
+        text-align: center;
+        font-family: "arial", sans-serif;
+        font-size: 24px;
+        color: #ccc;
+    }
+    .tl3{
+        position: relative;
+        top: 360px;
+        text-align: center;
+        font-family: "arial", sans-serif;
+        font-size: 24px;
+        color: #ccc;
+    }
+    #main3{top: 460px; max-width: 1199px;}
+    #main3>.img1{height: 1270px; max-width: 1199px; /* border: 1px solid red; */}
+    #main3>.p0{top: 100px; font-size: 40px;}
+    #main3>.p0>.ps1{margin-top: 30px; font-size: 18px;}
+    #main3>.p0>.ps2{
+        display: block;
+        font-size: 16px;
+        color: #ccc;
+        line-height: 24px;
+    }
+    .img2{top: 210px; width: 484px; height: 415px;}
+    #pp{max-width: 1199px;}
+    #pp>.p1{top: 230px; right: 80px;font-size: 14px;}
+    #pp>.p1>span{left: 190px;}
+    #timg{
+        display: block;
+        position: relative;
+        top: 300px;
+        width: 100%;
+        max-width: 1199px;
+        text-align: center;
+    }
+    #timg>p{
+        position: relative;
+        top: 20px;
+        color: #fff;
+        font-size: 30px;
+    }
+    #timg>img{
+        position: relative;
+        top: 50px;
+        width: 100%; height: 226px;
+        max-width: 1199px;
+    }
+    #main4{top: 1240px; max-width: 1199px;}
+    #main4>img{
+        height: 900px;
+        max-width: 1199px;
+    }
+    #main4>p{
+        position: relative;
+        top: 12px;
+        font-size: 50px;
+    }
+    #main4>p>.m4_1{font-size: 24px;}
+    #main4>.mff0>.m4_2{
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #ccc;
+    }
+    #ft>ul{
+        top: 640px;
+        justify-content: space-around;
+    }
+    #ft>ul>li{font-size: 24px;}
+    #main5{
+        top: 1650px;
+        height: 920px;
+        max-width: 1199px;
+    }
+    #main5>.m5_p{
+        position: relative;
+        top: 30px;
+        width: 582px; height: 445px;
+    }
+    #main5>p{
+        top: 90px;
+        font-size: 22px;
+    }
+    #m5_f>.m5t1{display: none;}
+    #m5_f2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        top: 20px;
+        width: 100%;
+        max-width: 1199px;
+    }
+    .m5t2{
+        position: relative;
+        top: 110px;
+        display: block;
+    }
+    .list_btn{display: none;}
+    #fmi{
+        top: 1650px;
+        height: 214px;
+        max-width: 1199px;
+        z-index: 9999;
+    }
+    #fmi>.fmi_1{
+        justify-content: center;
+    }
+    #fmi>.fmi_1>li{
+        height: 100px;
+        margin: 0 30px;
+        line-height: 100px;
+    }
+    #fmi>.fmi_1>li:first-child{
+        font-size: 18px;
+    }
+    #fmi>.fmi_1>li:first-child>span{
+        position: relative;
+        bottom: 80px;
+        font-size: 16px;
+    }
+    #fmi>.fmi_1>li>a{
+        display: block;
+        font-size: 24px;
+    }
+    #fmi>.fmi_2{
+        display: flex;
+        justify-content: center;
+    }
+    #fmi>.fmi_2>li{
+        position: relative;
+        bottom: 10px;
+        height: 114px;
+        margin: 0 20px;
+        line-height: 114px;
+        font-family: "arial", sans-serif;
+        font-size: 18px;
+        color: #333;
+        font-weight: 600;
+    }
+    #fmi>.fmi_2>li>span{
+        position: relative;
+        bottom: 90px;
+        font-size: 16px;
+        font-weight: 400;
+        color: #666;
+    }
+    #fmi>.fmi_2>li:last-child{
+        position: relative;
+        top: 34px;
+    }
+    #mail{
+        padding: 0 10px;
+        width: 268px; height: 40px;
+    }
+        
+
+    /* Footer CSS 영역 */
+    footer{
+        position: relative;
+        top: 1914px;
+        max-width: 1199px;
+        z-index: 9999;
+    }
+    #footerIn{
+        height: 192px;
+        max-width: 1199px;
+    }
+    #footerIn img{
+        width: 60px; height: 39px;
+        margin-top: 50px;
+    }
+}
+
+@media all and (min-width:1200px){
+    #utill{
+        display: block;
+        height: 40px;
+        background: #333;
+    }
+    #utill>ul{
+        margin: 0 auto;
+        width: 1260px;
+        display: flex;
+    }
+    #utill>ul>li>a{
+        display: block;
+        color: #fff;
+        font-family: "arial", sans-serif;
+        line-height: 40px;
+        text-indent: 14px;
+        text-align: center;
+    }
+    #headerIn{max-width: 1920px;}
+    .navi{display: none;}
+    .logo{
+        position: relative;
+        right: 570px;
+        width: 78px; height: 76px;
+        padding: 0;
+        text-align: center;
+    }
+    .logo img{width: 78px; height: 76px;}
+    #gnb{
+        width: 100%;
+        max-width: 1260px;
+        position: absolute;
+        top: 63px; right: 0px;
+        /* border: 1px solid red; */
+        display: block;
+        background: none;
+    }
+    #gnb>ul{
+        display: flex;
+        margin: 0 aut0;
+        justify-content: flex-end;
+    }
+    #gnb>ul>li>a{
+        padding-left: 40px;
+    }
+    #gnb>ul>li>a::after{
+        display: none;
+    }
+    .depth2{
+        position: relative;
+        left: 30px;
+    }
+    .depth2 a{
+        letter-spacing: -10;
+    }
+
+    #utill2{max-width: 1920px;}
+    #utill2>p{
+        margin: 0 auto;
+        width: 1230px;
+    }
+    #utill2>ul{
+        width: 1260px;
+        justify-content: flex-end;
+        margin: 0 auto;
+    }
+
+    /*//// (PC)메인 CSS 영역 ////*/
+    #mainVisual{max-width: 1920px;}
+    #mainVisual>.mbg{max-height: 2668px; max-width: 1920px;}
+    #mainVisual>p{
+        position: relative;
+        right: 500px;
+        top: 350px;
+        font-weight: 300;
+        font-size: 60px;
+    }
+    .mt{
+        font-weight: 600;
+        font-size: 60px;
+        position: relative;
+        left: 150px;
+        top: 14px;
+    }
+    .mt2{display: none;}
+    .mt3{
+        font-weight: 0;
+        display: block;
+        font-size: 18px;
+        position: relative;
+        left: 86px; bottom: 30px;
+    }
+    .handimg{
+        position: relative;
+        left: 280px;
+    }
+    #black_bg{
+        height: 508px;
+        max-width: 1920px;
+    }
+    #black_bg>ul{opacity: 0;}
+    #black_bg>ul>li:first-child>a{
+        font-size: 40px;
+    }
+    #black_bg>ul>li:nth-child(2)>a{
+        font-size: 30px;
+    }
+    #black_bg>ul>li:last-child>a{
+        font-size: 20px;
+    }
+    #black_bg>ul:last-child>li:nth-child(2)>a{
+        font-size: 20px;
+    }
+    
+    #fsd{top: 50px;}
+    #fsd>p{font-size: 50px;}
+    .mlook{font-size: 18px;}
+    .tlook{font-size: 18px;}
+    #fsd>img{top: 110px; width: 1060px; height: 538px;}
+
+    #main2{top: 200px; max-width: 1920px;}
+    #main2>img{max-width: 1920px; height: 1080px;}
+    .tl1, .tl2, .tl3{left: 200px;}
+    .tl1{top: 300px;}
+    .tl2{top: 410px;}
+    .tl3{top: 510px;}
+
+    #main3{top: 962px; max-width: 1920px;}
+    #main3>.img1{height: 1564px; max-width: 1920px;}
+    #main3>.p0{top: 120px; font-size: 54px;}
+    #main3>.p0>.ps1{margin-top: 50px; font-size: 20px;}
+    #main3>.p0>.ps2{font-size: 18px;}
+    .img2{top: 200px; width: 603px; height: 518px;}
+    #pp{max-width: 1920px;}
+    #pp>.p1{right: 120px;}
+    #pp>.p1>span{left: 270px;}
+    #timg{top: 340px; max-width: 1920px;}
+
+    #main4{top: 2036px; max-width: 1920px;}
+    #main4>img{height: 1080px;max-width: 1920px;}
+    #main4>p{bottom: 30px; font-size: 54px;}
+    #ft>ul{top: 800px;}
+    #ft>ul>li{font-size: 30px;}
+
+    #main5{top: 2626px; height: 1080px; max-width: 1920px;}
+    #main5>.m5_p{top: 60px; width: 771px; height: 590px;}
+    #main5>p{top: 100px;}
+    #m5_f2{top: 50px; max-width: 1920px;}
+
+    #fmi{
+        top: 2626px; 
+        display: flex;
+        max-width: 1920px;
+        justify-content: center;
+    }
+
+    footer{top: 3528px; max-width: 1920px;}
+    #footerIn{max-width: 1920px;}
+
+    #black_bg>ul{transform: translateY(0); opacity: 1}
+    #black_bg>ul{transform: translateY(0); opacity: 1}
+    #black_bg>ul{transform: translateY(0);}
+    #black_bg>ul{transform: translateY(0);}
+}   
