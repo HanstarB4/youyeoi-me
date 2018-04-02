@@ -43,7 +43,7 @@ html, body{
 #mainVisual{
     width: 100%;
     height: 1080px;
-    background: url("../images/mainbg_top.jpg") no-repeat center / cover;
+    background: url("../images/ex_bg_2.jpg") no-repeat center / cover;
 }
 .center{
     position: relative;
@@ -346,5 +346,26 @@ html, body{
 #end{
     width: 100%;
     height: 1080px;
-    background: url("../images/end_bg.png") no-repeat center / cover;
+    background: url("../images/ex_bg_3.jpg") no-repeat center / cover;
+}
+.endfont{
+    position: relative;
+    top: 320px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+/* //// */
+.left3{
+    position: relative;
+    top: 230px; left: 650px;
+    width: 600px;
+}
+.mid2{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 300px;
 }
