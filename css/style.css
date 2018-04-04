@@ -166,7 +166,7 @@ html, body{
 }
 
 /* //// */
-#xiaomi, #PUBG{
+#xiaomi, #capcom, #toyota, #apppt, #exex{
     width: 100%;
     height: 1080px;
 }
@@ -314,7 +314,28 @@ html, body{
     background: #cc0033;
     color: #cc0033;
 }
-.t_color3:hover{color: #000;}
+
+/* //// */
+.s_color1{
+    width: 70px; height: 30px;
+    margin-right: 20px;
+    background: #ffcc00;
+    color: #ffcc00;
+}
+.s_color1:hover{color: #000;}
+.s_color2{
+    width: 70px; height: 30px;
+    background: #0033ff;
+    margin-right: 20px;
+    color: #0033ff;
+}
+.s_color2:hover{color: #000;}
+.s_color3{
+    width: 70px; height: 30px;
+    background: #ff9966;
+    color: #ff9966;
+}
+.s_color3:hover{color: #000;}
 
 /* //// */
 .mid{
