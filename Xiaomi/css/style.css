@@ -1,50 +1,37 @@
 #wrap{width: 100%;}
-header, main, footer{position: relative;width: 100%;}
+header, main, footer{position: relative;width: 100%; font-family: "arial", sans-serif;}
 
 /* //////// 헤더 CSS 영역 //////// */
+#utill{display: none;}
 #headerIn{
-    width: 100%; height: 66px; 
+    width: 100%; height: 66px;
     max-width: 767px;
-    position: relative; 
     display: flex;
     align-items: center;
     border-bottom: 1px solid #ccc;
     margin: 0 auto;
 }
-.navi{position: relative;;width: 34px; height: 34px;}
-.navi{left: 10px;}
-.navi>a{
-    display: block;
-    width: 30px; height: 30px;
-}
-.navi span{
-    display: block;
-    width: 34px; height: 34px;
-}
+.navi{width: 34px; height: 34px; padding-left: 20px;}
+.navi>a{display: block; width: 30px; height: 30px;}
+.navi span{display: block; width: 34px; height: 34px;}
 .fa-bars{font-size: 34px;}
 .logo{
-    width: 40px; height: 40px; margin: 0 auto;
-    padding-right: 38px;
-}
-.logo>a{
-    display: block;
     width: 40px; height: 40px; 
+    margin: 0 auto;
+    padding-right: 40px;
 }
+.logo>a{display: block; width: 40px; height: 40px;}
 .logo img{width: 40px; height: 40px;}
-#utill{display: none;}
 #gnb{
     position: absolute;
     top: 67px; left: 0;
-    width: 100%;
-    max-width: 767px;
+    width: 100%; max-width: 767px;
     margin: 0 auto;
     background: white;
-    z-index: 99;
+    z-index: 1;
     display: none;
 }
-#gnb>ul>li{
-    border-bottom: 1px solid #ccc;
-}
+#gnb>ul>li{border-bottom: 1px solid #ccc;}
 #gnb>ul>li>a{
     position: relative;
     display: block;
@@ -53,32 +40,23 @@ header, main, footer{position: relative;width: 100%;}
     text-indent: 10px;
     padding: 10px 0;
 }
-#gnb>ul>li>a::after{
-    content:"▼";
+#gnb>ul>li>a:after{
+    content: "▼";
     display: block;
     width: 20px; height: 20px;
     position: absolute;
-    right: 20px; top: 50%;
+    top: 50%; right: 20px;
     transform: translateY(-50%);
 }
-#gnb>ul>li>a.on:after{
-    color: #000;
-    content: "▲";
-}
-#gnb>ul>li:last-child>a:after{
-    content: "";
-}
-.depth2{
-    width: 100%;
-    background: #ccc;
-    display: none;
-}
+#gnb>ul>li>a.on:after{content: "▲"; color: black;}
+#gnb>ul>li:last-child>a:after{content: "";}
+.depth2{width: 100%; background: #ccc; display: none;}
 .depth2 a{
     position: relative;
     display: block;
     font-size: 14px;
     text-indent: 20px;
-    padding: 4px 0 10px 0;
+    padding: 10px 0 10px 0;
 }
 #utill2{
     width: 100%; height: 50px;
@@ -90,9 +68,8 @@ header, main, footer{position: relative;width: 100%;}
     position: relative;
     top: 16px;
     padding-left: 10px;
-    font-family: "arial", sans-serif;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 #utill2>ul{
     position: relative;
@@ -103,31 +80,20 @@ header, main, footer{position: relative;width: 100%;}
 #utill2>ul>li>a{
     display: block;
     padding-right: 10px;
-    font-family: 'arial', sans-serif;
     font-size: 14px;
 }
-#utill2>ul>li:first-child>a{
-    color: gray;
-}
+#utill2>ul>li:first-child>a{color: gray;}
 
 /* //////// 메인 CSS 영역 //////// */
-/* #gr{background: url("../images/bg_main.jpg") no-repeat center / cover}; */
 #mainVisual{
-    width: 100%;  height: 3222px;
+    background: url("../images/bg_main.jpg") no-repeat center / cover;
+    width: 100%; height: 1760px;
     max-width: 767px;
     margin: 0 auto;
-}
-#mainVisual>.mbg{
-    position: absolute;
-    width: 100%; height: 100%;
-    max-width: 767px;
-    max-height: 1851px;
-    z-index: -99;
 }
 #mainVisual>p{
     padding-top: 20px;
     color: white;
-    font-family: "arial", sans-serif;
     font-size: 40px;
     text-align: center;
     font-weight: 600;
@@ -150,45 +116,24 @@ header, main, footer{position: relative;width: 100%;}
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-left: 34px;
 }
-.handimg{width: 300px; height: 440px;}
-
-/* /////////////////////// */
+.handimg{width: 300px; height: 440px; padding-left: 50px;}
 #black_bg{
     width: 100%; height: 768px;
-    max-width: 767px;
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
 }
-#black_bg>ul:first-child{
-    position: relative;
-    top: 50px;
-}
-#black_bg>ul:nth-child(2){
-    position: relative;
-    top: 150px;
-}
-#black_bg>ul:last-child{
-    position: relative;
-    top: 260px;
-}
+#black_bg>ul:first-child{position: relative; top: 50px;}
+#black_bg>ul:nth-child(2){position: relative; top: 150px;}
+#black_bg>ul:last-child{position: relative; top: 260px;}
 #black_bg>ul>li>a{
     display: block;
     font-family: "arial", sans-serif;
     color: white;
 }
-#black_bg>ul>li:first-child>a{
-    font-size: 30px;
-}
-#black_bg>ul>li:nth-child(2)>a{
-    line-height: 30px;
-    font-size: 18px;
-}
-#black_bg>ul>li:last-child>a{
-    line-height: 30px;
-    font-size: 16px;
-}
+#black_bg>ul>li:first-child>a{font-size: 30px;}
+#black_bg>ul>li:nth-child(2)>a{line-height: 30px; font-size: 18px;}
+#black_bg>ul>li:last-child>a{line-height: 30px; font-size: 16px;}
 #black_bg>ul:first-child>img{
     width: 219px; height: 50px;
     position: relative;
@@ -204,22 +149,14 @@ header, main, footer{position: relative;width: 100%;}
     position: relative;
     top: 12px; left: 10px;
 }
-
-/* ////////////////////// */
 #fsd{
     position: relative;
-    top: 20px;
-    text-align: center;
+    top: 20px; text-align: center;
 }
-#fsd>p{
-    font-family: "arial", sans-serif;
-    font-size: 36px;
-    color: white;
-}
+#fsd>p{font-size: 36px; color: white;}
 .mlook{
     position: relative;
-    color: #ccc;
-    top: 14px;
+    top: 14px; color: #999;
     display: block;
     font-size: 16px;
     line-height: 28px;
@@ -227,29 +164,22 @@ header, main, footer{position: relative;width: 100%;}
 .tlook{display: none;}
 #fsd>img{
     position: relative;
-    top: 50px;
+    top:  50px;
     width: 316px; height: 159px;
 }
-
-/* /////////// */
-#main2{
-    position: relative;
-    top: 88px;
-    width: 100%; height: 318px;
+#main22{
+    width: 100%;
     max-width: 767px;
+    margin: 0 auto;
 }
-#main2>img{
-    position: absolute;
-    width: 100%; height: 318px;
-    max-width: 767px;
-    z-index: -99;
+#main2{
+    background: url("../images/bg_main2.jpg") no-repeat center / cover;
+    width: 100%; height: 400px;max-width: 767px;
 }
 .tl1, .tl2, .tl3{display: none;}
 #main2>.ml1{
-    position: relative;
-    top: 70px;
+    padding-top: 100px;
     color: white;
-    font-family: "arial", sans-serif;
     font-size: 30px;
     text-align: center;
 }
@@ -259,24 +189,14 @@ header, main, footer{position: relative;width: 100%;}
     display: block;
     font-size: 18px;
 }
-/* ////////////// */
 #main3{
-    position: relative;
-    top: 80px;
-    width: 100%; height: 490px;
-    max-width: 767px;
-}
-#main3>.img1{
-    position: absolute;
-    width: 100%; height: 490px;
-    max-width: 767px;
-    z-index:-99;
+    background: url("../images/bg_main3.jpg") no-repeat center / cover;
+    width: 100%; height: 490px; max-width: 767px;
+    margin: 0 auto;
 }
 #main3>.p0{
-    position: relative;
-    top: 20px;
+    padding-top: 30px;
     color: white;
-    font-family: "arial", sans-serif;
     font-size: 30px;
     text-align: center;
 }
@@ -294,42 +214,28 @@ header, main, footer{position: relative;width: 100%;}
     width: 100%;
 }
 .img2{
-    position: relative; 
-    top: 50px;
+    position: relative;
+    top: 30px;
     width: 285px; height: 245px;
 }
-#pp{
-    width: 100%;
-    max-width: 767px;
-}
+#pp{width: 100%; max-width: 767px;}
 #pp>.p1{
     text-align: center;
     position: relative;
     top: 66px; right: 36px;
-    font-family: "arial", sans-serif;
     color: lightgray;
     text-align: center;
     font-size: 12px;
 }
 #pp>.p1>span{position: relative; left: 92px;}
-
 #main4{
-    position: relative;
-    top: 80px; 
-    width: 100%; height: 490px;
-    max-width: 767px;
-}
-#main4>img{
-    position: absolute;
-    width: 100%; height: 360px;
-    max-width: 767px;
-    z-index:-99;
+    background: url("../images/bg_main4.jpg") no-repeat center / cover;
+    width: 100%; height: 490px; max-width: 767px; z-index: 999;
 }
 #main4>p{
     position: relative;
     bottom: 40px;
     color: white;
-    font-family: "arial", sans-serif;
     font-size: 40px;
     text-align: center;
 }
@@ -338,57 +244,43 @@ header, main, footer{position: relative;width: 100%;}
     display: block;
     font-size: 18px;
 }
-#main4>.mff0>.m4_2{display: none;}
+#main4>p>.m4_2{display: none;}
 #ft>ul{
-    position: relative;
-    top: 200px;
+    padding-top: 320px;
     display: flex;
     justify-content: center;
 }
 #ft>ul>li{
     padding: 0 20px;
-    font-family: "arial", sans-serif;
     font-size: 16px;
     color: white;
     text-align: center;
 }
-/* ///////////////// */
 #main5{
-    position: relative;
-    bottom: 50px;
     width: 100%; height: 280px;
-    max-width: 767px;
     background: black;
     text-align: center;
-    z-index: 999;
 }
 #main5>.m5_p{width: 296px; height: 226px;}
 #main5>p{
-    position: relative;
-    top: 20px;
+    padding-top: 20px;
     color: white;
-    font-family: "arial", sans-serif;
     font-size: 20px;
 }
 #m5_f{
-    position: relative;
-    top: 20px;
     width: 100%; height: 670px;
     max-width: 767px;
     background: black;
     display: none;
 }
-#m5_f>.m5t1{
-    position: relative;
-    top: 25px;
-}
+#m5_f>img{z-index: 9999;}
 .m5t2{display: none;}
 .list_btn{
     position: relative;
+    left: 70px; bottom: 36px;
     width: 30px;
-    bottom: 88px; left: 70px;
-    z-index: 999;
     margin: 0 auto;
+    z-index: 999;
 }
 .btn1{
     display: block;
@@ -399,12 +291,15 @@ header, main, footer{position: relative;width: 100%;}
     z-index: 999;
     font-size: 30px;
     text-align: center;
-    line-height: 24px;
+    line-height: 30px;
     color: white;
 }
+
+/* //////// 풋터 CSS 영역 //////// */
 #fmi{
+    z-index: -999;
     position: relative;
-    bottom: 80px;
+    bottom: 30px;
     background: rgba(204, 204, 204, 0.3);
     width: 100%; height: 50px;
     max-width: 767px;
@@ -413,40 +308,33 @@ header, main, footer{position: relative;width: 100%;}
     display: flex;
     justify-content: space-around;
 }
-#fmi>.fmi_1>li{
-    line-height: 48px;
-    height: 46px;;
-}
+#fmi>.fmi_1>li{line-height: 48px; height: 46px;}
 #fmi>.fmi_1>li:first-child{
     height: 30px;
     position: relative;
     bottom: 4px;
-    font-family: "arial", sans-serif;
     font-size: 14px;
+    line-height: 28px;
     font-weight: 600;
     color: #333;
 }
 #fmi>.fmi_1>li>span{
     height: 20px;
     display: block;
-    position: relative;
-    bottom: 36px;
     font-size: 12px;
     font-weight: 400;
     color: #666;
 }
-
-/* footer css */
-footer{
-    height: 114px;
-    max-width: 767px;
-}
+.fmi_2{display: none;}
+footer{height: 100px;}
 #footerIn{
     position: relative;
+    bottom: 30px;
     width: 100%; height: 114px;
     max-width: 767px;
     background: black;
     margin: 0 auto;
+    z-index: -9999;
 }
 #footerIn>h1>a{
     display: block;
@@ -454,57 +342,42 @@ footer{
     align-items: center;
     justify-content: center;
 }
-#footerIn img{
-    width: 47px; height: 31px;
-    margin-top: 30px;
-}
+#footerIn img{width: 47px;  height: 31px; margin-top: 30px;}
 address{
     position: relative;
-    bottom: 26px;
+    bottom: 46px;
+    z-index: -999;
 }
 address>p{
     width: 100%;
     max-width: 767px;
     margin: 0 auto;
-    font-family: "arial", sans-serif;
     font-style: normal;
     font-size: 12px;
     text-align: center;
     color: white;
 }
-address>p>span{
-    color: rgb(255,105,0);
-}
+address>p>span{color: rgb(255,105,0);}
 
-/* //////////////// */
-/* //// Tablet //// */
 @media all and (min-width:768px){
+    /* //////// 헤더 CSS 영역 //////// */
     #headerIn{height: 88px; max-width: 1199px;}
     .fa-bars{font-size: 40px;}
-    .logo{
-        width: 78px; height: 76px;
-        padding: 30px 10px 0 0;
-    }
-    .logo>a{
-        display: block;
-        width: 78px; height: 76px;
-    }
+    .logo{width: 78px; height: 76px; padding: 30px 10px 0 0;}
+    .logo>a{display: block; width: 78px; height: 76px;}
     .logo img{width: 50px; height: 50px;}
     #gnb{top: 90px; max-width: 1199px;}
-    #utill2{height: 60px;max-width: 1199px;}
+    #utill2{height: 60px; max-width: 1199px;}
     #utill2>p{position: relative; top: 24px;}
     #utill2>ul{position: relative; top: 6px;}
 
-    /* 메인 CSS 영역 */
-    #mainVisual{height: 4000px;max-width: 1199px;}
-    #mainVisual>.mbg{max-width: 1199px;}
+    /* //////// 메인 CSS 영역 //////// */
+    #mainVisual{max-width: 1199px; height: 1900px;}
     #mainVisual>p{font-size: 50px;}
     .mt{font-size: 46px;}
-    #ex{margin-left: 60px;}
-    .handimg{width: 640px; height: 871px;}
+    .handimg{width: 640px; height: 871px; padding-left: 130px;}
     #black_bg{
-        height: 302px;
-        max-width: 1199px;
+        height: 302px; max-width: 1199px;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -519,11 +392,11 @@ address>p>span{
         display: block;
         line-height: 28px;
         margin-top: 14px;
-        color: #ccc;
+        color: #999;
     }
     #fsd>img{width: 558px; height: 283px;}
-    #main2{top: 18px; max-width: 1199px;}
-    #main2>img{height: 760px;max-width: 1199px;}
+    #main22{max-width: 1199px;}
+    #main2{height: 700px; max-width: 1199px;}
     .ml1, .ml2{display: none;}
     .tl1, .tl2, .tl3{display: block}
     .tl1{
@@ -532,7 +405,7 @@ address>p>span{
         text-align: center;
         font-family: "arial", sans-serif;
         font-size: 44px;
-        color: white
+        color: #999;
     }
     .tl2{
         position: relative;
@@ -540,7 +413,7 @@ address>p>span{
         text-align: center;
         font-family: "arial", sans-serif;
         font-size: 24px;
-        color: #ccc;
+        color: #999;
     }
     .tl3{
         position: relative;
@@ -548,10 +421,9 @@ address>p>span{
         text-align: center;
         font-family: "arial", sans-serif;
         font-size: 24px;
-        color: #ccc;
+        color: #999;
     }
-    #main3{top: 460px; max-width: 1199px;}
-    #main3>.img1{height: 1270px; max-width: 1199px; /* border: 1px solid red; */}
+    #main3{height: 1200px; max-width: 1199px;}
     #main3>.p0{top: 100px; font-size: 40px;}
     #main3>.p0>.ps1{margin-top: 30px; font-size: 18px;}
     #main3>.p0>.ps2{
@@ -560,15 +432,14 @@ address>p>span{
         color: #ccc;
         line-height: 24px;
     }
-    .img2{top: 210px; width: 484px; height: 415px;}
+    .img2{width: 484px; height: 415px;}
     #pp{max-width: 1199px;}
-    #pp>.p1{top: 230px; right: 80px;font-size: 14px;}
+    #pp>.p1{right: 80px; font-size: 14px;}
     #pp>.p1>span{left: 190px;}
     #timg{
         display: block;
         position: relative;
-        top: 300px;
-        width: 100%;
+        top: 100px; width: 100%;
         max-width: 1199px;
         text-align: center;
     }
@@ -584,14 +455,10 @@ address>p>span{
         width: 100%; height: 226px;
         max-width: 1199px;
     }
-    #main4{top: 1240px; max-width: 1199px;}
-    #main4>img{
-        height: 900px;
-        max-width: 1199px;
-    }
+    #main4{max-width: 1199px;}
     #main4>p{
         position: relative;
-        top: 12px;
+        bottom: 100px;
         font-size: 50px;
     }
     #main4>p>.m4_1{font-size: 24px;}
@@ -602,13 +469,12 @@ address>p>span{
         color: #ccc;
     }
     #ft>ul{
-        top: 640px;
+        padding-top: 270px;
         justify-content: space-around;
     }
     #ft>ul>li{font-size: 24px;}
     #main5{
-        top: 1650px;
-        height: 920px;
+        height: 850px;
         max-width: 1199px;
     }
     #main5>.m5_p{
@@ -617,7 +483,7 @@ address>p>span{
         width: 582px; height: 445px;
     }
     #main5>p{
-        top: 90px;
+        padding-top: 80px;
         font-size: 22px;
     }
     #m5_f>.m5t1{display: none;}
@@ -625,53 +491,37 @@ address>p>span{
         position: relative;
         display: flex;
         justify-content: center;
-        top: 20px;
+        
         width: 100%;
         max-width: 1199px;
     }
     .m5t2{
-        position: relative;
-        top: 110px;
+        padding-top: 50px;
         display: block;
     }
     .list_btn{display: none;}
+
+    /* //////// 풋터 CSS 영역 //////// */
     #fmi{
-        top: 1650px;
-        height: 214px;
-        max-width: 1199px;
+        margin-top: 30px;
+        height: 214px; max-width: 1199px;
         z-index: 9999;
     }
     #fmi>.fmi_1{
-        justify-content: center;
-    }
-    #fmi>.fmi_1>li{
         height: 100px;
         margin: 0 30px;
         line-height: 100px;
     }
-    #fmi>.fmi_1>li:first-child{
-        font-size: 18px;
-    }
-    #fmi>.fmi_1>li:first-child>span{
-        position: relative;
-        bottom: 80px;
-        font-size: 16px;
-    }
-    #fmi>.fmi_1>li>a{
-        display: block;
-        font-size: 24px;
-    }
-    #fmi>.fmi_2{
-        display: flex;
-        justify-content: center;
-    }
+    #fmi>.fmi_1>li:first-child{font-size: 18px;}
+    #fmi>.fmi_1>li:first-child>span{font-size: 16px;}
+    #fmi>.fmi_1>li>a{display: block; font-size: 24px;}
+    #fmi>.fmi_2{display: flex; justify-content: center;}
     #fmi>.fmi_2>li{
         position: relative;
         bottom: 10px;
         height: 114px;
         margin: 0 20px;
         line-height: 114px;
-        font-family: "arial", sans-serif;
         font-size: 18px;
         color: #333;
         font-weight: 600;
@@ -691,26 +541,13 @@ address>p>span{
         padding: 0 10px;
         width: 268px; height: 40px;
     }
-        
-
-    /* Footer CSS 영역 */
-    footer{
-        position: relative;
-        top: 1914px;
-        max-width: 1199px;
-        z-index: 9999;
-    }
-    #footerIn{
-        height: 192px;
-        max-width: 1199px;
-    }
-    #footerIn img{
-        width: 60px; height: 39px;
-        margin-top: 50px;
-    }
+    footer{max-width: 1199px; z-index: 9999;}
+    #footerIn{max-width: 1199px;}
+    #footerIn img{width: 60px; height: 39px; }
 }
 
 @media all and (min-width:1200px){
+    /* //////// 헤더 CSS 영역 //////// */
     #utill{
         display: block;
         height: 40px;
@@ -729,7 +566,6 @@ address>p>span{
         text-indent: 14px;
         text-align: center;
     }
-    #headerIn{max-width: 1920px;}
     .navi{display: none;}
     .logo{
         position: relative;
@@ -739,12 +575,11 @@ address>p>span{
         text-align: center;
     }
     .logo img{width: 78px; height: 76px;}
+    #headerIn{width: 100%; margin: 0 auto; max-width: none;}
     #gnb{
-        width: 100%;
         max-width: 1260px;
         position: absolute;
         top: 63px; right: 0px;
-        /* border: 1px solid red; */
         display: block;
         background: none;
     }
@@ -753,25 +588,16 @@ address>p>span{
         margin: 0 aut0;
         justify-content: flex-end;
     }
-    #gnb>ul>li{
-        border-bottom: 0;
-    }
-    #gnb>ul>li>a{
-        padding-left: 40px;
-    }
-    #gnb>ul>li>a::after{
-        display: none;
-    }
+    #gnb>ul>li{border-bottom: 0;}
+    #gnb>ul>li>a{padding-left: 40px;}
+    #gnb>ul>li>a::after{display: none;}
     .depth2{
         position: relative;
         left: 30px;
-        display: none;
+        opacity: 0;
     }
-    .depth2 a{
-        letter-spacing: -10;
-    }
-
-    #utill2{max-width: 1920px;}
+    .depth2 a{letter-spacing: -10;}
+    #utill2{max-width: none;}
     #utill2>p{
         margin: 0 auto;
         width: 1230px;
@@ -782,9 +608,8 @@ address>p>span{
         margin: 0 auto;
     }
 
-    /*//// (PC)메인 CSS 영역 ////*/
-    #mainVisual{max-width: 1920px;}
-    #mainVisual>.mbg{max-height: 2668px; max-width: 1920px;}
+    /* //////// 메인 CSS 영역 //////// */
+    #mainVisual{max-width: none; height: 2400px;}
     #mainVisual>p{
         position: relative;
         right: 500px;
@@ -807,75 +632,73 @@ address>p>span{
         position: relative;
         left: 86px; bottom: 30px;
     }
-    .handimg{
-        position: relative;
-        left: 280px;
-    }
-    #black_bg{
-        height: 508px;
-        max-width: 1920px;
-    }
-    #black_bg>ul{opacity: 0;}
-    #black_bg>ul>li:first-child>a{
-        font-size: 40px;
-    }
-    #black_bg>ul>li:nth-child(2)>a{
-        font-size: 30px;
-    }
-    #black_bg>ul>li:last-child>a{
-        font-size: 20px;
-    }
-    #black_bg>ul:last-child>li:nth-child(2)>a{
-        font-size: 20px;
-    }
-    
+    .handimg{position: relative; left: 280px;}
+    #black_bg{height: 508px; max-width: none;}
+    #black_bg>ul{opacity: 1;}
+    #black_bg>ul>li:first-child>a{font-size: 40px;}
+    #black_bg>ul>li:nth-child(2)>a{font-size: 30px;}
+    #black_bg>ul>li:last-child>a{font-size: 20px;}
+    #black_bg>ul:last-child>li:nth-child(2)>a{font-size: 20px;}
     #fsd{top: 50px;}
     #fsd>p{font-size: 50px;}
     .mlook{font-size: 18px;}
     .tlook{font-size: 18px;}
     #fsd>img{top: 110px; width: 1060px; height: 538px;}
-
-    #main2{top: 200px; max-width: 1920px;}
-    #main2>img{max-width: 1920px; height: 1080px;}
-    .tl1, .tl2, .tl3{left: 200px;}
+    #main22{max-width: none;}
+    #main2{max-width: none; height: 1080px;}
+    .tl1, .tl2, .tl3{padding-left: 700px;}
     .tl1{top: 300px;}
     .tl2{top: 410px;}
     .tl3{top: 510px;}
 
-    #main3{top: 962px; max-width: 1920px;}
-    #main3>.img1{height: 1564px; max-width: 1920px;}
-    #main3>.p0{top: 120px; font-size: 54px;}
+    #main3{max-width: none;}
+    #main3>.p0{font-size: 54px;}
     #main3>.p0>.ps1{margin-top: 50px; font-size: 20px;}
     #main3>.p0>.ps2{font-size: 18px;}
-    .img2{top: 200px; width: 603px; height: 518px;}
-    #pp{max-width: 1920px;}
-    #pp>.p1{right: 120px;}
-    #pp>.p1>span{left: 270px;}
-    #timg{top: 340px; max-width: 1920px;}
+    .img2{width: 603px; height: 518px;}
+    #pp{max-width: none;}
+    #timg{max-width: none;}
 
-    #main4{top: 2036px; max-width: 1920px;}
-    #main4>img{height: 1080px;max-width: 1920px;}
-    #main4>p{bottom: 30px; font-size: 54px;}
-    #ft>ul{top: 800px;}
-    #ft>ul>li{font-size: 30px;}
-
-    #main5{top: 2626px; height: 1080px; max-width: 1920px;}
-    #main5>.m5_p{top: 60px; width: 771px; height: 590px;}
-    #main5>p{top: 100px;}
-    #m5_f2{top: 50px; max-width: 1920px;}
-
-    #fmi{
-        top: 2626px; 
-        display: flex;
-        max-width: 1920px;
-        justify-content: center;
+    #main4{max-width: none; height: 1080px;}
+    #main4>p{
+        position: relative;
+        top: 20px;
+        font-size: 50px;
     }
+    #main4>p>.m4_1{font-size: 24px;}
+    #main4>.mff0>.m4_2{
+        display: block;
+        margin-top: 10px;
+        font-size: 18px;
+        color: #ccc;
+    }
+    #ft>ul{padding-top: 800px;}
+    #ft>ul>li{font-size: 24px;}
+    #main5{height: 850px; max-width: none;}
+    #main5>.m5_p{
+        position: relative;
+        top: 30px;
+        width: 582px; height: 445px;
+    }
+    #main5>p{padding-top: 80px; font-size: 22px;}
+    #m5_f2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%; max-width: none;
+    }
+    .m5t2{padding-top: 50px; display: block;}
+    .list_btn{display: none;}
 
-    footer{top: 3528px; max-width: 1920px;}
-    #footerIn{max-width: 1920px;}
-
-    #black_bg>ul{transform: translateY(0); opacity: 1}
-    #black_bg>ul{transform: translateY(0); opacity: 1}
-    #black_bg>ul{transform: translateY(0);}
-    #black_bg>ul{transform: translateY(0);}
+    /* //////// 풋터 CSS 영역 //////// */
+    #fmi{
+        display: flex;
+        max-width: none;
+        justify-content: space-around;
+    }
+    .fmi_1{position: relative; top: 120px;}
+    .fmi_1>li{padding-left: 70px;}
+    .fmi_2{position: relative; top: 90px;}
+    footer{max-width: none;}
+    #footerIn{max-width: none;}
 }   
